@@ -43,4 +43,26 @@
         <tag>图片多</tag>
       </tags>
   </entry>
+  <entry>
+    <title>Hexo &amp; Next 添加评论,文章阅读次数</title>
+    <url>/2020/04/17/Hexo-Next-%E6%B7%BB%E5%8A%A0%E8%AF%84%E8%AE%BA-%E6%96%87%E7%AB%A0%E9%98%85%E8%AF%BB%E6%AC%A1%E6%95%B0/</url>
+    <content><![CDATA[<h1 id="完善博客的功能"><a href="#完善博客的功能" class="headerlink" title="完善博客的功能"></a>完善博客的功能</h1><p>完善博客站点的功能性<br>1、统计文章的阅读量<br>2、文章的评论及回复<br>3、搜索功能</p>
+<a id="more"></a>
+
+<h1 id="文章阅读量"><a href="#文章阅读量" class="headerlink" title="文章阅读量"></a>文章阅读量</h1><p>使用LeanCloud作为阅读量的存储。创建Counter表存储阅读量。<br>参考文章：<br><a href="https://www.cnblogs.com/lijianming180/p/12433189.html" target="_blank" rel="noopener">https://www.cnblogs.com/lijianming180/p/12433189.html</a></p>
+<h1 id="文章的评论及回复"><a href="#文章的评论及回复" class="headerlink" title="文章的评论及回复"></a>文章的评论及回复</h1><p>使用LeanCloud作为阅读量的存储。创建Comment表存储评论。<br>参考文章：<br><a href="https://valine.js.org/" target="_blank" rel="noopener">https://valine.js.org/</a></p>
+<h1 id="next的-config-yml-关键部分"><a href="#next的-config-yml-关键部分" class="headerlink" title="next的_config.yml 关键部分"></a>next的_config.yml 关键部分</h1><p>替换 # your leancloud application appid 为应用的appid<br>替换 # your leancloud application appkey 为应用的appkey</p>
+<figure class="highlight yml"><table><tr><td class="code"><pre><span class="line"><span class="comment"># visitors 就是访问的意思，此处对应Counter</span></span><br><span class="line"><span class="comment"># Show number of visitors to each article.</span></span><br><span class="line"><span class="comment"># You can visit https://leancloud.cn get AppID and AppKey.</span></span><br><span class="line"><span class="attr">leancloud_visitors:</span></span><br><span class="line">  <span class="attr">enable:</span> <span class="literal">true</span></span><br><span class="line">  <span class="attr">app_id:</span> <span class="comment"># your leancloud application appid</span></span><br><span class="line">  <span class="attr">app_key:</span> <span class="comment"># your leancloud application appkey</span></span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="comment"># Valine 就是评论功能插件，此处对应Comment</span></span><br><span class="line"><span class="comment"># Valine.</span></span><br><span class="line"><span class="comment"># You can get your appid and appkey from https://leancloud.cn</span></span><br><span class="line"><span class="comment"># more info please open https://valine.js.org</span></span><br><span class="line"><span class="attr">valine:</span></span><br><span class="line">  <span class="attr">enable:</span> <span class="literal">true</span></span><br><span class="line">  <span class="attr">appid:</span> <span class="comment"># your leancloud application appid</span></span><br><span class="line">  <span class="attr">appkey:</span> <span class="comment"># your leancloud application appkey</span></span><br><span class="line">  <span class="attr">notify:</span> <span class="literal">false</span> <span class="comment"># mail notifier , https://github.com/xCss/Valine/wiki</span></span><br><span class="line">  <span class="attr">verify:</span> <span class="literal">false</span> <span class="comment"># Verification code</span></span><br><span class="line">  <span class="attr">placeholder:</span> <span class="string">Just</span> <span class="string">go</span> <span class="string">go</span> <span class="comment"># comment box placeholder</span></span><br><span class="line">  <span class="attr">avatar:</span> <span class="string">mm</span> <span class="comment"># gravatar style</span></span><br><span class="line">  <span class="attr">guest_info:</span> <span class="string">nick,mail,link</span> <span class="comment"># custom comment header</span></span><br><span class="line">  <span class="attr">pageSize:</span> <span class="number">10</span> <span class="comment"># pagination size</span></span><br></pre></td></tr></table></figure>
+
+<h1 id="leancloud表的创建"><a href="#leancloud表的创建" class="headerlink" title="leancloud表的创建"></a>leancloud表的创建</h1><p><img src="https://s1.ax1x.com/2020/04/17/JVwP9P.jpg" alt="JVwP9P.jpg"></p>
+<h1 id="注意事项"><a href="#注意事项" class="headerlink" title="注意事项"></a>注意事项</h1><p>1、不需要手动创建记录。被浏览后，被评论后自动会添加到对应的表<br>2、修改next的_config.yml后，需要重新执行 hexo g 生成文件</p>
+]]></content>
+      <categories>
+        <category>Hexo &amp; Hexo Next</category>
+      </categories>
+      <tags>
+        <tag>Hexo</tag>
+        <tag>Hexo Next 配置</tag>
+      </tags>
+  </entry>
 </search>
