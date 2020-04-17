@@ -83,7 +83,7 @@
 <meta property="og:description" content="CSS是什么？怎么工作的？整理笔记时的记录，对 css 的起源，工作做更进一步更细致的记录。">
 <meta property="og:locale" content="zh_CN">
 <meta property="article:published_time" content="2020-04-17T09:44:23.000Z">
-<meta property="article:modified_time" content="2020-04-17T10:54:28.787Z">
+<meta property="article:modified_time" content="2020-04-17T12:11:23.361Z">
 <meta property="article:author" content="刘永源">
 <meta property="article:tag" content="css">
 <meta property="article:tag" content="笔记">
@@ -424,7 +424,7 @@
 <p>现在的CSS都是这样的了</p>
 <figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-class">.red</span>&#123;</span><br><span class="line">  <span class="attribute">color</span>:red;</span><br><span class="line">&#125;</span><br><span class="line"><span class="selector-class">.black</span>&#123;</span><br><span class="line">  <span class="attribute">color</span>:black;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 <p>这样的代码不仅可以直接作用在标签上，还可以在页面内通过<code>&lt;style&gt;样式内容&lt;/style&gt;</code>来维护，更可以通过<code>link</code>标签来引用外部的CSS文件。维护起来可方便了<br>上面说到CSS在早期是为了结构化标签提供样式表，那么 html &amp; xml 都是可以使用 css 的。不过随着科技的发展，xml 更会被作为数据传输的一种数据格式，而html与css的配合则达到了极致。现在的css都是作用在html上。</p>
-<h2 id="CSS-是怎么工作的"><a href="#CSS-是怎么工作的" class="headerlink" title="CSS 是怎么工作的"></a>CSS 是怎么工作的</h2><p>摘自：MDN<br>1、浏览器载入html<br>2、将html文件转化成一个DOM（Document Object Model）DOM是计算机内存中的表现形式<br>3、浏览器会拉去该HTML相关的资源，例如图片，视频，css样式表<br>4、浏览器拉去到css之后会进行解析，根据不同的选择器（element，class，id等）把他们分到不同的“桶中”，浏览器基于它找到的不同的选择器，讲不通的规则应用在对应的DOM的节点中并添加节点依赖的样式（这个中间步骤称为渲染树）<br>5、上述规则应用于渲染树后，渲染书会依照应该出现的结构进行布局<br>6、网页展示在屏幕上（这一步称为着色）</p>
+<h2 id="CSS-是怎么工作的"><a href="#CSS-是怎么工作的" class="headerlink" title="CSS 是怎么工作的"></a>CSS 是怎么工作的</h2><p>摘自：MDN<br>1、浏览器载入html<br>2、将html文件转化成一个DOM（Document Object Model）DOM是计算机内存中的表现形式<br>3、浏览器会拉去该HTML相关的资源，例如图片，视频，css样式表<br>4、浏览器拉去到css之后会进行解析，根据不同的选择器（element，class，id等）把他们分到不同的“桶中”，浏览器基于它找到的不同的选择器，将不同的规则应用在对应的DOM的节点中并添加节点依赖的样式（这个中间步骤称为渲染树）<br>5、上述规则应用于渲染树后，渲染树会依照应该出现的结构进行布局<br>6、网页展示在屏幕上（这一步称为着色）</p>
 <p><a href="https://developer.mozilla.org/zh-CN/docs/Learn/CSS/First_steps/CSS%E5%A6%82%E4%BD%95%E8%BF%90%E8%A1%8C" target="_blank" rel="noopener">https://developer.mozilla.org/zh-CN/docs/Learn/CSS/First_steps/CSS%E5%A6%82%E4%BD%95%E8%BF%90%E8%A1%8C</a></p>
 <p>W3C的CSS文档：<a href="https://www.w3.org/TR/css-2018/" target="_blank" rel="noopener">https://www.w3.org/TR/css-2018/</a></p>
 <h2 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h2><p>计算机技术在西方起源，早期的西方计算机做为军方使用。后来才进入到普罗大众生活中，大众对计算机能展示的东西有着巨大的需求，这种强力需求刺激了市场，加速了生活中计算机的硬件升级。可以说为了看到更好看的东西就是<code>CSS &amp; 一切展示型的语言</code>的起源，为了更好看，更快的看到的东西，满足看到更多的东西，由于硬件不断升级<code>CSS &amp; HTML</code>就会有着不断升级地表现力。</p>
